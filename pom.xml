@@ -21,8 +21,11 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <systemPropertyVariables>
+                        <!--go to this login page-->
                         <url>https://proba-ood.inv.bg/login</url>
+                        <!--this is the email that you need to login (you can change it)-->
                         <email>borkodishev@gmail.com</email>
+                        <!--this is   the password-->
                         <password>123456</password>
                         <headless>false</headless>
                         <browser>chrome</browser>
