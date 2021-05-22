@@ -8,4 +8,4 @@ Tests will be:
 
 a) For successful login and logout
 
-b) For making client and then delete this client.
+b) Create successfully client
