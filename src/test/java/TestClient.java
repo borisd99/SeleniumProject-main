@@ -29,22 +29,22 @@ public class TestClient extends BaseTest {
 
     }
 
-    @Test
-    @DisplayName("Delete client")
-    public void deleteClient() throws InterruptedException {
-        loginPage.navigateTo();
-        //Assert that we are on Login page
-        Assertions.assertEquals("Вход в inv.bg", loginPage.getHeadingText());
-        loginPage.enterEmail(Defaults.EMAIL);
-        loginPage.enterPassword(Defaults.PASSWORD);
-        loginPage.pressLoginButton();
-        //Assert that we are logged in successfully
-        Assertions.assertEquals(Defaults.EMAIL, homePage.getUserPanelText());
-        homePage.clickOnClientsButton();
-        //Assert that we are on clients page
-        Assertions.assertEquals("Клиенти", clientPage.getHeadTextOnClientPage());
-        Thread.sleep(2000);
-
-    }
+//    @Test
+//    @DisplayName("Delete client")
+//    public void deleteClient() throws InterruptedException {
+//        loginPage.navigateTo();
+//        //Assert that we are on Login page
+//        Assertions.assertEquals("Вход в inv.bg", loginPage.getHeadingText());
+//        loginPage.enterEmail(Defaults.EMAIL);
+//        loginPage.enterPassword(Defaults.PASSWORD);
+//        loginPage.pressLoginButton();
+//        //Assert that we are logged in successfully
+//        Assertions.assertEquals(Defaults.EMAIL, homePage.getUserPanelText());
+//        homePage.clickOnClientsButton();
+//        //Assert that we are on clients page
+//        Assertions.assertEquals("Клиенти", clientPage.getHeadTextOnClientPage());
+//        Thread.sleep(2000);
+//
+//    }
 
 }

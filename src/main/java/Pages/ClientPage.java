@@ -62,5 +62,10 @@ public class ClientPage {
         return driver.findElement(By.xpath("//div[@id='okmsg']")).getText().trim();
     }
 
+//    public void deleteClient() {
+//        driver.findElement(By.xpath("//a[@href='https://proba-ood.inv.bg/clients/manage/view:13']")).click();
+//        driver.findElement(By.xpath("//a[@href='https://proba-ood.inv.bg/clients/manage/delete:13']")).click();
+//
+//    }
 
 }
