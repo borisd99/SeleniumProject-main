@@ -1,3 +1,4 @@
+import Pages.ClientPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -13,7 +14,7 @@ public class BaseTest {
     private WebDriver driver;
     protected LoginPage loginPage;
     protected HomePage homePage;
-//    protected ClientPage clientPage;
+    protected ClientPage clientPage;
 
     @BeforeAll
     public static void beforeAll() {
@@ -30,7 +31,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         loginPage = new LoginPage(driver);
         homePage = new HomePage(driver);
-//        clientPage = new ClientPage(driver);
+        clientPage = new ClientPage(driver);
     }
 
     @AfterEach

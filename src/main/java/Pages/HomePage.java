@@ -20,6 +20,11 @@ public class HomePage {
         System.out.println("Press logout link");
         driver.findElement(userPanelText).click();
         driver.findElement(By.xpath("//a[@class='selenium-button-logout button-logout']")).click();
-
     }
+
+    public void clickOnClientsButton() {
+        System.out.println("Clicking on clients button");
+        driver.findElement(By.xpath("//a[@href='https://proba-ood.inv.bg/clients']")).click();
+    }
+
 }
